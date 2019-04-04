@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AR Model</title>
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1>Treatment Success Model</h1>
+
+    <table>
+        <tbody>
+        <tr>
+            <th><label for="reduced-duodenum">Reduced Duodenum</label></th>
+            <td>
+                <input id="reduced-duodenum" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="no-icv">No ICV</label></th>
+            <td>
+                <input id="no-icv" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="end-stoma">End Stoma</label></th>
+            <td>
+                <input id="end-stoma" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="resid-bowel-short">Residual bowel length &lt;=200</label></th>
+            <td>
+                <input id="resid-bowel-short" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="short-gut">Ultra short gut</label></th>
+            <td>
+                <input id="short-gut" type="checkbox"  />
+            </td>
+        </tr>
+
+
+        <tr>
+            <th><label for="mucosal-gut-failure">Mucosal gut failure</label></th>
+            <td>
+                <input id="mucosal-gut-failure" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="neuromuscular-gut-failure">Neuromuscular gut failure</label></th>
+            <td>
+                <input id="neuromuscular-gut-failure" type="checkbox"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="serum-bilirubin">Serum Bilirubin</label></th>
+            <td>
+                <input id="serum-bilirubin" type="number" step="0.01"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="tpn-duration">TPN duration</label></th>
+            <td>
+                <input id="tpn-duration" type="number" step="0.01"  />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="tpn-volume">TPN volume (100 ml)</label></th>
+            <td>
+                <input id="tpn-volume" type="number" step="0.1" min="0" />
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="tpn-energy">TPN energy (10 kcal/kg)</label></th>
+            <td>
+                <input id="tpn-energy" type="number" step="0.01"  />
+            </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <th>
+                Stop TPN at 6 months
+            </th>
+            <td>
+                <output id="result">enter data</output>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
