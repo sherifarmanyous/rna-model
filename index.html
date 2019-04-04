@@ -17,9 +17,11 @@
             min-width: 400px;
             margin: 0 auto;
         }
+        hr {
+            color: antiquewhite;
+        }
         table {
             width: 100%;
-            border-top: 1px solid antiquewhite;
         }
         th {
             text-align: right;
@@ -31,11 +33,17 @@
         input[type="number"] {
             width: 100%;
         }
+        .output {
+            font-family: monospace;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="main-container">
         <h1>Re-establishment of Nutritional Autonomy (RNA)</h1>
+
+        <hr />
 
         <table>
             <tbody>
@@ -129,7 +137,7 @@
                 <th>
                     Stop TPN at 6 months
                 </th>
-                <td>
+                <td class="output">
                     <output id="result">enter data</output>
                 </td>
             </tr>
