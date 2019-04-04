@@ -31,7 +31,6 @@ function compute()
         tpne * -0.34924
     ;
 
-    // EXP(D14)/(1+EXP(D14))
     var prob = Math.exp(psum)/(1+Math.exp(psum));
 
     if (isNaN(prob)) {
