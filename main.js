@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 function compute()
 {
-    const intercept = 3.91847;
-    var rd = $("#reduced-duodenum").is(":checked") ? 1 : 0; // duodenum reduced
+    const intercept = 4.25561270981822;
+
+    var rbs = $("#resid-bowel-short").is(":checked") ? 1 : 0; //
     var noicv = $("#no-icv").is(":checked") ? 1 : 0; //
     var endstoma = $("#end-stoma").is(":checked") ? 1 : 0; //
-    var rbs = $("#resid-bowel-short").is(":checked") ? 1 : 0; //
     var usg = $("#short-gut").is(":checked") ? 1 : 0; //
     var mgf = $("#mucosal-gut-failure").is(":checked") ? 1 : 0; //
     var ngf = $("#neuromuscular-gut-failure").is(":checked") ? 1 : 0; //
@@ -18,17 +18,17 @@ function compute()
     var tpne = $("#tpn-energy").val(); //
 
     var psum = intercept    +
-        rd * 0.12838        +
-        noicv * -0.82285    +
-        endstoma * -0.73775 +
-        rbs * -0.35601      +
-        usg * -2.95987      +
-        mgf * -0.27824      +
-        ngf * -1.63467      +
-        sb * -0.3435        +
-        tpndur * -0.02858   +
-        tpnvol * -0.05254   +
-        tpne * -0.34924
+
+        noicv * -1.07880966137193       +
+        endstoma * -0.653926467406664   +
+        rbs * -0.0725706928348354       +
+        usg * -2.52572864430826         +
+        mgf * -0.072570692834835        +
+        ngf * -2.30258509299405         +
+        sb * -0.342490308946776         +
+        tpndur * -0.0202027073175195    +
+        tpnvol * -0.0725706928348354    +
+        tpne * -0.301105092783922
     ;
 
     var prob = Math.exp(psum)/(1+Math.exp(psum));
